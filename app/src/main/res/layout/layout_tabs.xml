@@ -6,6 +6,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="13"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_stripe"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:weightSum="13">
 
@@ -37,21 +52,6 @@
             android:id="@+id/ib_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="13"
-        android:orientation="horizontal">
-
-        <View
-            android:id="@+id/v_stripe"
-            android:layout_width="0dp"
-            android:layout_height="5dp"
-            android:background="@color/colorAccent"
             android:layout_weight="3"/>
 
     </LinearLayout>
