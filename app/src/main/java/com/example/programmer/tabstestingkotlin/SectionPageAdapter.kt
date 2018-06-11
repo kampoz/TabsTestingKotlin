@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentManager
  */
 class SectionPageAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm)  {
 
-    private val mFragmentList = ArrayList<Fragment>()
+    val mFragmentList = ArrayList<Fragment>()
 
     fun addFragment(fragment: Fragment, title: String) {
         mFragmentList.add(fragment)
@@ -24,4 +24,6 @@ class SectionPageAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm)  {
     override fun getCount(): Int {
         return mFragmentList.size
     }
+
+
 }
